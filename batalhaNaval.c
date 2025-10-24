@@ -18,12 +18,12 @@ int main() {
     };
 
 // impressão da matriz-tabuleiro
-    printf("  A B C D E F G H I J\n");
-    printf(" +-------------------\n");
+    printf("   A B C D E F G H I J\n");
+    printf(" +--------------------\n");
     int coluna = 0;
-    for (int i = 0; i < 10; i++){
-        printf("%d|", coluna);
-        for (int j = 0; j <10; j++){
+    for (int i = 0; i < 10; i++){ //Loop externo - COLUNAS
+        printf("%d| ", coluna); 
+        for (int j = 0; j <10; j++){ //Loop interno - LINHAS
             //Navio H(A0,B0,C0)
             if (j < 3 && i == 0){
                 printf("3 ");
