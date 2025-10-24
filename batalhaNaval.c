@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+//Recursivas
+
+
+
 // declaração da matriz-tabuleiro
 
 int main() {
@@ -51,9 +55,29 @@ int main() {
         printf("\n");
         coluna++;
     };
+    int poder;
+    printf("Insira um poder para atacar:\n");
+    printf("[ 1 ] Cone\n");
+    printf("[ 2 ] Octaedro\n");
+    printf("[ 3 ] Cruz\n");
+    scanf("%d", &poder);
+
+    switch(poder)
+    {
+        case 1:
+            cone();
+            break;
+ /*       case 2:
+            octa();
+            break;
+        case 3:
+            cruz();
+            break;
+        }
 
 
     
+    */
 
     return 0;
-}
+}}
